@@ -1,0 +1,140 @@
+/* fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+
+/* variable */
+:root{
+    --primary-color:#FB6A27;
+    --dark-color: #0F0F0F;
+    --gray-color: gray;
+
+    --h1-font-size:40px;
+    --h2-font-size:32px;
+    --small-font-size:14px;
+}
+
+/* reset css */ 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+img {
+    max-width: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* global css */
+section {
+    padding: 70px 0;
+}
+
+section .section-title {
+    font-size: var(--h2-font-size);
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.btn.orange {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+.text-orange {
+    color: var(--primary-color);
+}
+
+.text-dark {
+    color: var(--dark-color);
+}
+
+.fs-7 {
+    font-size: var(--small-font-size);
+}
+
+.form-control:focus {
+    box-shadow: none;
+    border-color: var(--primary-color);
+}
+
+.text-justify {
+    text-align: justify;
+  }
+/* css per section */
+
+/* navbar */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: white; /* Sesuaikan warna */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Efek bayangan biar lebih elegan */
+    padding: 10px 20px;
+    z-index: 1000; /* Biar selalu di atas elemen lain */
+}
+.navbar .nav-item .nav-link:hover,
+.navbar .nav-item .nav-link.active {
+    color:var(--primary-color)
+}
+.navbar .nav-item .nav-link {
+    color: black; /* Warna default */
+    transition: color 0.1s ease-in-out;
+}
+
+.navbar .nav-item .nav-link.active {
+    color: --primary-color
+}
+
+
+/* header */
+.header-section .heder-title{
+    font-size: var(--h1-font-size);
+}
+
+.header-section .header-skill{
+    color: var(--dark-color);
+}
+
+.header-section .header-skill:hover{
+    color: var(--primary-color);
+}
+
+.header-section .header-skill i{
+    transition: .3s;
+}
+.header-section .header-skill:hover i{
+    transform: rotate(-45deg);
+}
+
+.header-section .header-img{
+    width:100%
+}
+
+/* portfolio */
+.portfolio-section .card .card-img-top{
+    height: 250px;
+    width: 100%;
+    object-fit: cover;
+}
+
+@media screen and (max-width:768px){
+    .portfolio-section .card .card-img-top{
+        height: 100px;
+    }  
+}
+
+/* skill   */
+.skill-section .skill-img{
+    width:1%
+}
+
+/* footer  */
+footer{
+    background-color: #0F0F0F;
+    color: white;
+}
