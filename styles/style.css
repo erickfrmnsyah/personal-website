@@ -135,37 +135,36 @@ section .section-title {
     transition: background-color 0.3s ease, border-color 0.3s ease;
 }
 
-.skill-icon-box {
+.skills-card .skill-icon-box {
     background-color: var(--btn-light-bg);
     border: 1px solid var(--card-border);
     transition: all 0.25s ease-in-out;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 75px;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    height: 54px !important;
+    min-height: 54px !important;
+    max-height: 54px !important;
+    padding: 6px !important;
+    border-radius: 10px !important;
+    overflow: hidden !important;
 }
 
-.skill-icon-box:hover {
-    transform: translateY(-4px);
-    border-color: var(--primary-color);
-    box-shadow: 0 4px 12px var(--shadow-color);
+.skills-card .skill-icon-box:hover {
+    transform: translateY(-3px);
+    border-color: var(--primary-color) !important;
+    box-shadow: 0 4px 12px var(--shadow-color) !important;
 }
 
-.skill-icon {
-    width: 32px;
-    height: 32px;
-    object-fit: contain;
-}
-
-.skill-name {
-    font-size: 11px;
-    font-weight: 500;
-    color: var(--text-color);
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    max-width: 100%;
+.skills-card .skill-icon-box img.skill-icon {
+    width: 28px !important;
+    height: 28px !important;
+    max-width: 28px !important;
+    max-height: 28px !important;
+    object-fit: contain !important;
+    margin: auto !important;
+    display: block !important;
+    flex-shrink: 0 !important;
 }
 
 .skill-section .skill-img {
