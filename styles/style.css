@@ -142,11 +142,11 @@ section .section-title {
     display: flex !important;
     align-items: center !important;
     justify-content: center !important;
-    height: 54px !important;
-    min-height: 54px !important;
-    max-height: 54px !important;
+    height: 76px !important;
+    min-height: 76px !important;
+    max-height: 76px !important;
     padding: 6px !important;
-    border-radius: 10px !important;
+    border-radius: 12px !important;
     overflow: hidden !important;
 }
 
@@ -157,10 +157,10 @@ section .section-title {
 }
 
 .skills-card .skill-icon-box img.skill-icon {
-    width: 28px !important;
-    height: 28px !important;
-    max-width: 28px !important;
-    max-height: 28px !important;
+    width: 50px !important;
+    height: 50px !important;
+    max-width: 50px !important;
+    max-height: 50px !important;
     object-fit: contain !important;
     margin: auto !important;
     display: block !important;
